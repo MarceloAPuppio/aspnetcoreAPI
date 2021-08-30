@@ -1,0 +1,8 @@
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\bin\Debug\netcoreapp3.1\EL.deps.json
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\bin\Debug\netcoreapp3.1\EL.dll
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\bin\Debug\netcoreapp3.1\EL.pdb
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\obj\Debug\netcoreapp3.1\EL.AssemblyInfoInputs.cache
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\obj\Debug\netcoreapp3.1\EL.AssemblyInfo.cs
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\obj\Debug\netcoreapp3.1\EL.dll
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\obj\Debug\netcoreapp3.1\EL.pdb
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\EL\obj\Debug\netcoreapp3.1\EL.csprojAssemblyReference.cache

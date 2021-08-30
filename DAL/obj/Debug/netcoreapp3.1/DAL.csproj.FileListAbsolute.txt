@@ -1,0 +1,11 @@
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\bin\Debug\netcoreapp3.1\EL.dll
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\bin\Debug\netcoreapp3.1\EL.pdb
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\marce\source\repos\PruebaJWTUsariosyRoles\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
