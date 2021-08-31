@@ -1,18 +1,63 @@
-﻿<!DOCTYPE html>
-<html>
+﻿
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
 </head>
 <body>
-    <h1>Caca</h1>
-    <form id="form">
-        <input type="file" name="file" />
-        <input type="submit" name="submit" id="submit" value="ingresar" />
-    </form>
-    <!--<img id="imagen"  alt="Alternate Text" />-->
-    <img id="imagen" src="images/default.png" alt="Alternate Text" />
+    <header class="header">
+        <picture class="header__Logo">
+            <img src="https://source.unsplash.com/random/50x50" alt="" class="header__Logo-Image">
+            <figcaption class="header__Logo-Name">School</figcaption>
+        </picture>
+        <nav class="nav">
+            <ul>
+               <li><a href="">A</a></li>
+               <li><a href="">B</a></li>
+               <li><a href="">C</a></li>
+               <li><a href="">D</a></li>
+               <li><a href="">E</a></li>
+               <li><a href="">F</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
 
-    <script src="scripts/index.js"></script>
+        </section>
+    </main>
+    <aside>
+        <div class="aside__Login">
+            <picture>
+                <img src="https://source.unsplash.com/random/30x30" alt="">
+                <figcaption>Nombre</figcaption>
+            </picture>
+            <input list="roles" name="roles" />
+            <datalist id="roles">
+                <option value="Administrador">
+                <option value="Alumno">
+                <option value="Profesor">
+                <option value="Otro">
+            </datalist>
+        </div>
+        <div class="aside__preview">
+            <p>ID 123456</p>
+            <picture>
+                <img src="https://source.unsplash.com/random/50x50" alt="">
+                <figcaption>User name</figcaption>
+            </picture>
+            <p>otros datos</p>
+            <div class="preview__socialMedia">
+                <ul>
+                    <li><a href="">Mesaje</a></li>
+                    <li><a href="">Llamar</a></li>
+                    <li><a href="">Mail </a></li>    
+                </ul>
+            </div>
+        </div>
+    </aside>
 </body>
 </html>
