@@ -29,7 +29,7 @@ namespace User.Controllers
             
         }
         // GET: api/USER
-        [Authorize(Roles = "Visitor")]
+        [Authorize(Roles = "Administrador")]
         [HttpGet]
         public IActionResult Get()
         {

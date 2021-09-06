@@ -30,23 +30,77 @@
         </nav>
     </header>
     <main class="main">
-        <section>
-sdsdsd
+        <section class="database">
+        <div class="database-header">
+            <h2>Database</h2>
+            <nav>
+                <ul>
+                    <li>Alumnos</li>
+                    <li>Profesores</li>
+                    <li>Staff</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="database-table">
+            <table class="table">
+                <thead>
+                    <tr >
+                        <th class="column column-1">Nombre</th>
+                        <th class="column column-2">ID</th>
+                        <th class="column column-3">Mail</th>
+                        <th class="column column-4">Carrera</th>
+                        <th class="column column-5">otros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="column column-1"><img src="https://source.unsplash.com/random/50x50" alt="" class="table-nombre-img"><span class="table-nombre-nombre">Marcelo</span></td>
+                        <td class="column column-2">12</td>
+                        <td class="column column-3">bal bla</td>
+                        <td class="column column-4">ECO</td>
+                        <td class="column column-5">Eblaa</td>
+                    </tr>
+                    <tr>
+                        <td class="column column-1"><img src="https://source.unsplash.com/random/50x50" alt="" class="table-nombre-img"><span class="table-nombre-nombre">Marcelo</span></td>
+                        <td class="column column-2">12</td>
+                        <td class="column column-3">bal bla</td>
+                        <td class="column column-4">ECO</td>
+                        <td class="column column-5">Eblaa</td>
+                    </tr>
+                    <tr>
+                        <td class="column column-1"><img src="https://source.unsplash.com/random/50x50" alt="" class="table-nombre-img"><span class="table-nombre-nombre">Marcelo</span></td>
+                        <td class="column column-2">12</td>
+                        <td class="column column-3">bal bla</td>
+                        <td class="column column-4">ECO</td>
+                        <td class="column column-5">Eblaa</td>
+                    </tr>
+                    <tr>
+                        <td class="column column-1"><img src="https://source.unsplash.com/random/50x50" alt="" class="table-nombre-img"><span class="table-nombre-nombre">Marcelo</span></td>
+                        <td class="column column-2">12</td>
+                        <td class="column column-3">bal bla</td>
+                        <td class="column column-4">ECO</td>
+                        <td class="column column-5">Eblaa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </section>
     </main>
     <aside class="aside">
         <div class="aside__Login">
-            <picture>
-                <img src="https://source.unsplash.com/random/30x30" alt="">
-                <figcaption>Nombre</figcaption>
+            <picture class="aside__Login__Picture">
+                <img class="aside__Login__Picture__Img" src="https://source.unsplash.com/random/30x30" alt="">
             </picture>
-            <input list="roles" name="roles" />
-            <datalist id="roles">
-                <option value="Administrador">
-                <option value="Alumno">
-                <option value="Profesor">
-                <option value="Otro">
-            </datalist>
+            <div class="aside__loggedInfo">
+                <span class="aside__logged-name">Usuairo Logueado</span>
+                <select name="roles" id="logged-roles" class="aside__Login__Select">
+                    <option class="aside__Login__Option" value="">Administrador</option>
+                    <option class="aside__Login__Option" value="">Alumno</option>
+                </select>
+            </div>
+            <span class="material-icons exit">
+                logout
+            </span>
         </div>
         <div class="aside__preview">
             <p>ID 123456</p>
