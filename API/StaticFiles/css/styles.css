@@ -33,7 +33,7 @@ body{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 2.5rem;
+    grid-template-rows: 1fr 2rem;
     grid-template-columns: 14rem 1fr 17.5rem;
     grid-template-areas: "header main aside"
                         "footer footer footer";
@@ -119,30 +119,6 @@ position: relative;
 
 /*ASIDE*/
 /*LOGIN*/
-/*
-        <div class="aside__Login">
-            <picture class="aside__Login__Picture">
-                <img class="aside__Login__Picture__Img" src="https://source.unsplash.com/random/30x30" alt="">
-            </picture>
-            <div class="aside__loggedInfo">
-                <span class="aside__logged-name">Usuairo Logueado</span>
-                <select name="roles" id="logged-roles" class="aside__Login__Select">
-                    <option class="aside__Login__Option" value="">Administrador</option>
-                    <option class="aside__Login__Option" value="">Alumno</option>
-                </select>
-            </div>
-            <!-- <input list="roles" name="roles" />
-            <datalist id="roles">
-                <option value="Administrador">
-                <option value="Alumno">
-                <option value="Profesor">
-                <option value="Otro">
-            </datalist> -->
-            <span class="material-icons">
-                logout
-            </span>
-        </div>
-*/
 .aside{
 }
 .aside__Login{
@@ -194,40 +170,45 @@ position: relative;
 }
 
 /*SECTION DATABASE*/
+/*HEADER*/
+.database-header{
+padding: 2rem;
+}
+.database-title{
+margin: 0.7rem;
+}
+.database-list{
+display: flex;
+border-bottom: 0.1rem solid var(--borderColor);
+}
+.database-list__item{
+    padding: 1rem 2rem;
+    width: 10rem;
+    text-align: center;
+}
+.database-list__item--selected{
+color:var(--selectedDarkTextColor);
+margin-bottom: -0.1rem;
+border-bottom: 0.1rem solid var(--selectedDarkTextColor);
+}
 /*TABLE*/
-/*
- <div class="database-table">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Nombre</th><th>ID</th><th>otros</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="https://source.unsplash.com/random/50x50" alt=""><span>Marcelo</span></td>
-                        <td>12</td>
-                        <td>bal bla</td>
-                    </tr>
-                </tbody>
-            </table>
-            */
+
 .database-table{
     /* background: cyan; */
 }
 
 .table{
     margin: 0 auto;
-    width: 90%;
+    padding: 0 1rem;
+    width: 100%;
     border-spacing: 0 .3rem;
-    /* background: darkgrey; */
 }
 tr{
     margin: .9rem 0;
 }
 .table thead tr, .table tbody tr{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 
 }
 
@@ -237,10 +218,14 @@ justify-content: space-around;
     align-items: center;
 }
 .column-1{
-    width: 15rem;
+    width: 14rem;
+    justify-content: flex-start;
     /* background: darkmagenta; */
 }
+th:first-of-type{
+    justify-content: center;
 
+}
 
 .table-nombre-img{
     height: 2.5rem;
