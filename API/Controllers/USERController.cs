@@ -56,9 +56,13 @@ namespace User.Controllers
 
             if (token == null)
                 return Unauthorized();
+            var BLLU = new BLLUsuario();
+            var usuarioLogueado = BLLU.Login(usuario);
+            usuarioLogueado.Password = "";
             //TODO: Creo que me conviene agregar como claims la url de la foto, el nombre del usuario y el Id. De esa manera, cuando va a su perfil hsace un get con ese ID
             //Creo que no sirve... porque el claim del jwt no me permite saber los valores a menos que lo decodifique
-            return Ok($"{{'Token':'{token}','Data':'${JsonSerializer.Serialize(usuario)}'}}".Replace("'","\""));
+            return Ok($"{{\"Token\":\"{token}\",\"Data\":{JsonSerializer.Serialize(usuarioLogueado)}}}");
+            //return Ok(token + JsonSerializer.Serialize(usuario));
         }
         // POST: api/USER
         [AllowAnonymous]
