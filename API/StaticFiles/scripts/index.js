@@ -1,5 +1,5 @@
-﻿import { setHeaderAuth, loadTable } from "./post.js";
-localStorage.setItem("token", "asasassdssdsdsd");
+﻿import { setHeaderAuth, loadTable, loadRoles } from "./post.js";
+// localStorage.setItem("token", "asasassdssdsdsd");
 console.log(setHeaderAuth());
 
 const data = [
@@ -53,7 +53,30 @@ const data = [
     otros: "otros",
   },
 ];
-loadTable(document.getElementById("tBody"), data);
+document.getElementById("logged-roles").addEventListener("change", (e) => {
+  console.log(e.target.value);
+}),
+  //CARGAMOS ROLES
+  loadRoles(
+    document.getElementById("logged-roles"),
+    JSON.parse(sessionStorage.getItem("Data")).Roles
+  );
+//CARGAMOS LA TABLA... MIENTRAS CARGA, ESTÁ EL SPINNER ACTIVADO
+fetch("./api/user", {
+  headers: {
+    authorization: setHeaderAuth(),
+  },
+})
+  .then((res) => {
+    return res.json();
+  })
+  .then((res) => {
+    console.log(res);
+    document.querySelector(".spinner").style.display = "none";
+    document.querySelector(".database-table").style.display = "block";
+    loadTable(document.getElementById("tBody"), res);
+  });
+
 // const $ = (element) => {
 //   return document.querySelector(element);
 // };

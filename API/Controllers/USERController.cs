@@ -29,7 +29,8 @@ namespace User.Controllers
             
         }
         // GET: api/USER
-        [Authorize(Roles = "Administrador")]
+
+        [Authorize(Roles = "SysAdmin")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -39,6 +40,7 @@ namespace User.Controllers
         }
 
         // GET: api/USER/5
+
         [Authorize(Roles ="SysAdmin")]
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)

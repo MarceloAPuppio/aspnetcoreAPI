@@ -195,6 +195,7 @@ border-bottom: 0.1rem solid var(--selectedDarkTextColor);
 
 .database-table{
     /* background: cyan; */
+    display: none;
 }
 
 .table{
@@ -250,4 +251,22 @@ th:first-of-type{
 .column-5{
     width: 8rem;
     /* background: red */
+}
+
+/*SPINNER 👾👻👽*/
+
+.spinner{
+    position: relative;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid var(--accentColor) 0.5rem;
+    border-bottom: solid transparent 0.5rem;
+    animation: spinn infinite linear 0.8s;
+}
+
+@keyframes spinn{
+    from{transform:rotate(0deg)}
+    to{transform: rotate(360deg);}
 }
